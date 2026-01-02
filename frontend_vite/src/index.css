@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-medical-teal: #0f4c45;
+    --color-medical-dark: #000000;
+    /* Pure Black for max contrast */
+    --color-medical-light: #d8f3ec;
+    --color-medical-cream: #f0f4f4;
+    /* Slightly darker cream for better white box contrast */
+  }
+
+  body {
+    @apply bg-[var(--color-medical-cream)] text-[var(--color-medical-dark)] font-sans antialiased;
+  }
+
+  p {
+    @apply text-black font-medium;
+    /* Force high contrast on paragraphs */
+  }
+}
